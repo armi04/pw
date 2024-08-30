@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hacer que el scroller de la pagina(entera) desaparezca */
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Fondo Blanco */
+.formatcurso {
+  width: 100%;
+  max-width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  padding: 24px;
+  background-color: var(--color-primary);
+  border-radius: 16px;
+  animation: fadeInUp;
+  animation-duration: 1s;
+}
+
+.accordion {
+  margin-top: 17px;
+  width: 100%;
+}
+/* Mis Aulas */
+
+.formatcurso .titleen {
+  color: var(--color-first-cursos);
+  text-transform: uppercase;
+  border-bottom: 2px dotted;
+}
+
+.formatcurso .titleen h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 20px 0px 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Subtitulos: 1er grado 2do grado */
+.accordion .contentBx {
+  position: relative;
+}
+
+.accordion .contentBx .label {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13.28px;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.accordion .contentBx #sub1 {
+  background: rgb(116, 86, 158);
+}
+
+.accordion .contentBx #sub2 {
+  background: rgb(168, 198, 102);
+}
+
+.accordion .contentBx #sub3 {
+  background: rgb(237, 158, 13);
+}
+
+.accordion .contentBx #sub4 {
+  background: rgb(120, 102, 198);
+}
+
+.accordion .contentBx #sub5 {
+  background: rgb(237, 13, 88);
+}
+
+.container1 {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 13px;
+  user-select: none;
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+  background: transparent;
+}
+
+
+.line {
+  width: calc(100% - 7px);
+  height: 2px;
+  left: 4px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .7s transform cubic-bezier(0,1,.33,1.2), background .4s;
+}
+
+.line-indicator {
+  transform: translateY(-50%);
+}
+
+.accordion .contentBx.active .container1 .line-indicator {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+/* Contenido en sí */
+.accordion .contentBx .contenT {
+  position: relative;
+  background: var(--color-primary);
+  margin: 8px 0px;
+  height: 340px;
+  transition: 0.5s;
+  overflow-y: scroll;
+  /* Añadido */
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* Ocultar scroll */
+.accordion .contentBx .contenT::-webkit-scrollbar {
+  display: none;
+}
+/* Ocultar scroll */
+.accordion .contentBx .contenT {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.accordion .contentBx.active .contenT {
+  height: 0;
+  overflow: hidden;
+}
+
+/* Fin Accordion */
+
+/* Formato de las Cartas 3D */
+.card-father {
+  margin: 20px 30px;
+  perspective: 1000px;
+}
+
+.card-father:hover .card-ofc {
+  transform: rotateY(180deg);
+}
+.card-ofc {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 600ms;
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+}
+
+.card-front {
+  background-size: cover;
+  background-position: center;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background: var(--card-back-color-bg); 
+  color: var(--card-back-color-text);
+}
+
+.body-card-front {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transform: translateZ(40px);
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.body-card-back {
+  padding: 40px;
+}
+
+.body-card-back h1 {
+  text-align: center;
+}
+
+.body-card-back ul {
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 18px;
+}
+
+.body-card-back ul li {
+  margin-bottom: 10px;
+  list-style:disc;
+}
+
+.body-card-back button {
+  margin-top: 23px;
+  margin-left: 40px;
+  padding: 7px 40px;
+  text-decoration: none;
+  position: relative;
+  border: none;
+  font-size: 16px;
+  font-family: inherit;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 300%;
+  border-radius: 10px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.body-card-back button:hover{
+  animation: ani 8s linear infinite;
+  border: none;
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+.body-card-back button:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.body-card-back button:hover::before{
+  filter: blur(20px);
+}
+
+.body-card-back button:active{
+  background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+}
+
+/*SVG*/
+#back-to-top{
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+  width: 40px;
+  height: 40px;
+  background: var(--color-open);
+  opacity: 0;
+  border-radius: 3px;
+  margin: 16px;
+  font-size: 1.25em;
+  text-decoration: none;
+  bottom: -150px;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+#back-to-top i{
+  font-size: .65em;
+  color: #fff;
+}
+
+#back-to-top:hover{
+  animation: bounce_513 1s infinite;
+}
+
+#back-to-top.show-btt{
+  bottom: 0px;
+  opacity: .6;
+}
+
+#back-to-top.show-btt:hover{
+  opacity: 1;
+}
+
+@media (max-width: 760px) {
+  #back-to-top{
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 30px;
+  }
+}
+/*margin-left: 40px;
+  padding: 10px 40px;
+  margin-top: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background: #58b0f6;
+  box-shadow: 1px 1px 30px -5px #58b0f6;
+  border-radius: 10px;
+  transition: box-shadow 600ms;
+
+  width: 9em;
+  height: 3em;
+  line-height: 2em;

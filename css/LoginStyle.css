@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@200&display=swap');
+
+
+/* Establece los valores predeterminados de margen y padding a 0 para todos los elementos */
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Estilos para el elemento HTML */
+html {
+    font-family: 'Anuphan', sans-serif;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    background-image: url("../assets/img/SantaLucia.jpg"); /* Imagen de fondo */
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Estilos para el formulario */
+form {
+    position: absolute;
+    transform: translate(60%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 350px;
+    border-radius: 20px;
+    background-color: #d8d9cf;
+    padding: 30px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el título del formulario */
+form h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para los campos de entrada */
+form input {
+    display: block;
+    outline: none;
+    width: 100%;
+    border-radius: 20px;
+    height: 30px;
+    border: none;
+    background: none;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Estilos para las etiquetas */
+form label {
+    display: inline-block;
+    margin-bottom: 7px;
+    font-size: 15px;
+}
+
+/* Estilos para el campo de usuario */
+.text-user {
+    margin-top: 30px;
+}
+
+/* Estilos para el campo de contraseña */
+.text-pass {
+    margin-top: 30px;
+}
+
+/* Estilos para el enlace de "Olvidaste tu contraseña" */
+.forgot {
+    margin-top: 20px;
+}
+
+.forgot a {
+    color: #5f7161;
+}
+
+/* Estilos para el botón de inicio de sesión */
+.btn-login {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: antiquewhite;
+    transition: .5s;
+}
+
+.btn-login:hover {
+    background-color: #8696ee;
+}
+
+
+
+

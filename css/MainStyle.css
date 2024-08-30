@@ -1,0 +1,956 @@
+/* Importar fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #ecf4fc;
+}
+
+/* Estilos para el contenedor de botones */
+.button-container {
+  position: fixed;
+  top: 90px;
+  left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(222.12deg, rgb(154, 181, 255) -56.52%, rgb(97, 74, 252) 114.92%);
+  opacity: 0;
+  background-color: #ffffff;
+}
+
+/* Estilos para los botones */
+.button {
+  display: block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Estilos para imágenes redondeadas */
+.imagen-redondeada {
+  border-radius: 2%;
+}
+
+/*Encabezado*/
+
+a {
+  text-decoration: none; /* Elimina la decoración de texto subrayado en los enlaces */
+  color: #ecf4fc; /* Establece el color de texto de los enlaces */
+}
+
+.logo {
+  display: flex; /* Muestra el elemento como un contenedor flexible */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+}
+
+.logo img {
+  width: 50px; /* Establece el ancho de la imagen en 50px */
+  height: 50px; /* Establece la altura de la imagen en 50px */
+  margin-left: 5px; /* Agrega un margen izquierdo de 5px a la imagen */
+}
+
+.logo span {
+  color: #fff; /* Establece el color de texto en blanco */
+  margin-left: 20px; /* Agrega un margen izquierdo de 20px al texto */
+}
+
+/*Logo de la pagina principal*/
+
+.logo2 {
+  display: flex; /* Muestra el elemento como un contenedor flexible */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  margin-left: calc(50px);
+}
+
+.logo2 img {
+  width: 60px; /* Establece el ancho de la imagen en 50px */
+  height: 60px; /* Establece la altura de la imagen en 50px */ /* Agrega un margen izquierdo de 5px a la imagen */
+}
+
+.logo2 span {
+  color: #fff; /* Establece el color de texto en blanco */
+  margin-left: 24px; /* Agrega un margen izquierdo de 20px al texto */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Establece la tipografía a Arial o la fuente que desees */
+  font-size: 34px; /* Aumenta el tamaño del texto a 24px */
+}
+
+.header {
+  width: 100%; /* Establece el ancho del elemento en 100% */
+  max-height: 80px; /* Establece la altura mínima del elemento en 72px */
+  z-index: 11; /* Establece el índice de apilamiento en 11 */
+  position: fixed; /* Establece la posición del elemento como fija */
+  background: linear-gradient(
+    222.12deg,
+    rgb(154, 181, 255) -56.52%,
+    rgb(97, 74, 252) 114.92%
+  ); /* Establece un fondo con degradado lineal */
+  display: flex; /* Muestra el elemento como un contenedor flexible */
+  justify-content: space-between; /* Distribuye los elementos horizontalmente con espacio entre ellos */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  padding: 10px; /* Agrega un espacio de relleno de 10px alrededor del elemento */
+}
+
+nav .bx-help-circle:hover {
+  color: #000000; /* Cambia el color del icono cuando se pasa el mouse por encima */
+}
+
+nav a:hover {
+  color: #000000; /* Cambia el color del enlace cuando se pasa el mouse por encima */
+}
+
+nav a {
+  font-weight: 400; /* Establece el peso de la fuente en 400 */
+  padding: 10px; /* Agrega un espacio de relleno de 10px alrededor del enlace */
+}
+
+nav .bx-help-circle {
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  padding: 10px; /* Agrega un espacio de relleno de 10px alrededor del icono */
+  cursor: pointer; /* Cambia el cursor del mouse cuando se pasa por encima del icono */
+  color: #ecf4fc; /* Establece el color del icono en #ecf4fc */
+}
+
+/*Barra Horizontal*/
+
+/* Lista de botones del sidebar */
+
+.sidebarHead ul {
+  list-style: none; /* Quita los estilos de lista predeterminados */
+  padding: 0; /* Quita el espacio de relleno predeterminado */
+  margin: 0; /* Quita los márgenes predeterminados */
+}
+
+.sidebarHead li {
+  display: inline-block; /* Muestra los elementos uno al lado del otro */
+  margin-right: 10px; /* Agrega un margen derecho entre los elementos */
+}
+
+.sidebarHead li:last-child {
+  margin-right: 0; /* Quita el margen derecho del último elemento */
+}
+
+.sidebarHead ul li {
+  position: relative; /* Establece la posición del elemento como relativa */
+  list-style-type: none; /* Quita el estilo de viñetas de la lista */
+  height: 50px; /* Establece la altura del elemento en 50px */
+  width: 50px; /* Establece el ancho del elemento en 50px */
+  margin: 1.5rem auto; /* Establece los márgenes superior e inferior a 1.5rem y los laterales automáticos */
+  line-height: 50px; /* Establece la altura de línea del elemento en 50px */
+}
+
+.sidebarHead ul li a {
+  color: #ecf4fc; /* Establece el color del texto en #ecf4fc */
+  display: flex; /* Muestra el elemento como un contenedor flexible */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  text-decoration: none; /* Quita la decoración de texto */
+  border-radius: 0.8rem; /* Establece el radio de borde en 0.8rem */
+}
+
+.sidebarHead ul li a:hover {
+  background-color: #ecf4fc; /* Establece el color de fondo en #ecf4fc */
+  color: #12171e; /* Establece el color del texto en #12171e */
+}
+
+.sidebarHead ul li a i {
+  min-width: 50px; /* Establece el ancho mínimo del elemento en 50px */
+  text-align: center; /* Alinea el contenido del elemento al centro horizontal */
+  height: 50px; /* Establece la altura del elemento en 50px */
+  border-radius: 12px; /* Establece el radio de borde en 12px */
+  line-height: 50px; /* Establece la altura de línea del elemento en 50px */
+}
+
+.sidebarHead .nav-item {
+  opacity: 0; /* Establece la opacidad del elemento en 0 */
+}
+
+/* Rayita Blanca del costado de botones */
+.horizontalSelected:before {
+  content: "";
+  width: 100%; /* Cambia el ancho del elemento a 100% */
+  height: 3px; /* Cambia la altura del elemento a 3px */
+  background: #ecf4fc;
+  position: absolute;
+  bottom: -15px; /* Cambia la posición inferior del elemento a -15px */
+  left: 0;
+}
+
+
+/*Barra Lateral*/
+.sidebar {
+  position: fixed; /* Establece la posición del elemento como fija */
+  top: 70px; /* Posiciona el elemento a 70px desde la parte superior */
+  left: 0; /* Posiciona el elemento a la izquierda */
+  height: 100%; /* Establece la altura del elemento en 100% */
+  width: 80px; /* Establece el ancho del elemento en 80px */
+  background: rgba(
+    103,
+    85,
+    253,
+    255
+  ); /* Establece el color de fondo con formato RGBA */
+  padding: 0.4rem 0.8rem; /* Agrega un espacio de relleno de 0.4rem en la parte superior e inferior y 0.8rem en los lados */
+  transition: all 0.5s ease; /* Agrega una transición suave a todas las propiedades durante 0.5 segundos */
+}
+
+.user-image {
+  width: 50px; /* Establece el ancho de la imagen en 50px */
+  border-radius: 100%; /* Establece un borde redondeado del 100% para crear una forma circular */
+  border: 1px solid #ecf4fc; /* Establece un borde sólido de 1px con color #ecf4fc */
+}
+
+.sidebar .top .logo {
+  color: #ecf4fc; /* Establece el color del texto en #ecf4fc */
+  display: flex; /* Muestra el elemento como un contenedor flexible */
+  height: 50px; /* Establece la altura del elemento en 50px */
+  width: 100%; /* Establece el ancho del elemento en 100% */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  pointer-events: none; /* Desactiva los eventos de puntero para el elemento y sus hijos */
+  opacity: 1; /* Establece la opacidad del elemento en 1 */
+}
+
+.sidebar .top .logo span {
+  opacity: 0; /* Establece la opacidad del elemento en 0 */
+}
+
+.top .logo i {
+  font-size: 2rem; /* Establece el tamaño de fuente del icono en 2 rem */
+  margin-right: 9px; /* Establece un margen derecho de 9px */
+  margin-left: 8px; /* Establece un margen izquierdo de 8px */
+}
+
+.user {
+  display: flex; /* Muestra el elemento como un contenedor flexible */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  margin: 1rem 0; /* Establece un margen superior e inferior de 1rem y margen izquierdo y derecho automático */
+}
+
+.user p {
+  color: #fff; /* Establece el color del texto en #fff (blanco) */
+  opacity: 1; /* Establece la opacidad del elemento en 1 */
+  margin-left: 1rem; /* Establece un margen izquierdo de 1rem */
+}
+
+.bold {
+  font-weight: 600; /* Establece el grosor de la fuente en 600 (negrita) */
+}
+
+.sidebar p {
+  opacity: 0; /* Establece la opacidad del elemento en 0 */
+}
+
+/* Lista de botones del sidebar */
+
+.sidebar ul li {
+  position: relative; /* Establece la posición del elemento como relativa */
+  list-style-type: none; /* Quita el estilo de viñetas de la lista */
+  height: 50px; /* Establece la altura del elemento en 50px */
+  width: 90%; /* Establece el ancho del elemento en 90% */
+  margin: 1.5rem auto; /* Establece los márgenes superior e inferior a 1.5rem y los laterales automáticos */
+  line-height: 50px; /* Establece la altura de línea del elemento en 50px */
+}
+
+.sidebar ul li a {
+  color: #ecf4fc; /* Establece el color del texto en #ecf4fc */
+  display: flex; /* Muestra el elemento como un contenedor flexible */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  text-decoration: none; /* Quita la decoración de texto */
+  border-radius: 0.8rem; /* Establece el radio de borde en 0.8rem */
+}
+
+.sidebar ul li a:hover {
+  background-color: #ecf4fc; /* Establece el color de fondo en #ecf4fc */
+  color: #12171e; /* Establece el color del texto en #12171e */
+}
+
+.sidebar ul li a i {
+  min-width: 50px; /* Establece el ancho mínimo del elemento en 50px */
+  text-align: center; /* Alinea el contenido del elemento al centro horizontal */
+  height: 50px; /* Establece la altura del elemento en 50px */
+  border-radius: 12px; /* Establece el radio de borde en 12px */
+  line-height: 50px; /* Establece la altura de línea del elemento en 50px */
+}
+
+.sidebar .nav-item {
+  opacity: 0; /* Establece la opacidad del elemento en 0 */
+}
+
+/* Rayita Blanca del costado de botones */
+.selected:before {
+  content: ""; /* Agrega contenido vacío antes del elemento */
+  width: 3px; /* Establece el ancho del elemento en 3px */
+  height: 80%; /* Establece la altura del elemento en 80% */
+  background: #ecf4fc; /* Establece el color de fondo en #ecf4fc */
+  position: absolute; /* Establece la posición del elemento como absoluta */
+  left: -15px; /* Establece la posición izquierda del elemento en -15px */
+}
+
+/* Cuadrados de la derecha del sidebar */
+.sidebar ul li .tooltip {
+  opacity: 0; /* Establece la opacidad del elemento en 0 */
+}
+
+/* Cuadrado del slider */
+.enrollador {
+  padding: calc(96px) 32px 0px calc(200px); /* Establece el relleno del elemento con valores calculados */
+}
+
+.wrapper {
+  height: 312px; /* Establece la altura del elemento en 312px */
+  width: 100%; /* Establece el ancho del elemento al 100% */
+  max-width: 1128px; /* Establece el ancho máximo del elemento en 1128px */
+  margin-right: auto; /* Establece el margen derecho del elemento automáticamente */
+  margin-left: auto; /* Establece el margen izquierdo del elemento automáticamente */
+  position: relative; /* Establece la posición del elemento como relativa */
+  background: transparent; /* Para hacer aparecer el fondo colocar color a este background */
+}
+
+/* Registro de notas */
+/* Parte superior izquierda */
+
+.container {
+  padding: 5.2em; /* Establece el relleno del elemento en 5.2em */
+  width: 100%; /* Establece el ancho del elemento al 100% */
+  max-width: 1130px; /* Establece el ancho máximo del elemento en 1130px */
+  margin-right: auto; /* Establece el margen derecho del elemento automáticamente */
+  margin-left: auto; /* Establece el margen izquierdo del elemento automáticamente */
+  position: relative; /* Establece la posición del elemento como relativa */
+}
+
+ul {
+  list-style: none; /* Quita el estilo de viñetas de la lista */
+  padding: 0; /* Establece el relleno de la lista a 0 */
+}
+
+.registro {
+  text-align: center; /* Alinea el texto al centro */
+  padding-bottom: 1em; /* Establece el relleno inferior del elemento en 1em */
+}
+
+.reg-wrapper {
+  box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7); /* Establece una sombra al elemento */
+}
+
+.student-info {
+  background: #f9feff; /* Establece el color de fondo en #f9feff */
+  height: 100%; /* Establece la altura del elemento al 100% */
+  padding: 1em; /* Establece el relleno del elemento en 1em */
+  color: #485e74; /* Establece el color de texto en #485e74 */
+}
+
+.student-info img {
+  display: block; /* Muestra la imagen como bloque */
+  margin: auto; /* Establece los márgenes automáticos para centrar la imagen horizontalmente */
+  margin-bottom: 15px; /* Establece el margen inferior de la imagen en 15px */
+}
+
+.student-info h2 {
+  text-align: center; /* Alinea el texto al centro */
+  margin: 19.92px 0px; /* Establece los márgenes superiores e inferiores del elemento */
+}
+
+.student-info h3 {
+  margin: 0px 0px 18.72px; /* Establece los márgenes inferiores del elemento */
+}
+
+.student-info h3,
+.student-info span {
+  display: inline-block; /* Muestra los elementos en línea y como bloque */
+  margin-top: 0; /* Establece el margen superior del elemento a 0 */
+  padding: 0; /* Establece el relleno del elemento a 0 */
+}
+
+.student-info span {
+  margin-top: 3px; /* Establece el margen superior del elemento en 3px */
+  float: right; /* Hace que el elemento flote a la derecha */
+}
+
+/* Parte inferior - derecha */
+.grade-info {
+  background: #c9e6ff; /* Establece el color de fondo en #c9e6ff */
+  padding: 1em; /* Establece el relleno del elemento en 1em */
+  color: #485e74; /* Establece el color de texto en #485e74 */
+}
+
+.grade-info h3 {
+  margin: 18.72px 0px; /* Establece los márgenes superiores e inferiores del elemento */
+}
+
+.grade-info form {
+  display: grid; /* Establece el contenedor como una cuadrícula */
+  grid-template-columns: 1fr 1fr; /* Divide la cuadrícula en 2 columnas de igual tamaño */
+  grid-gap: 20px; /* Establece el espacio entre las celdas de la cuadrícula */
+}
+
+.grade-info form label {
+  display: block; /* Muestra el elemento como bloque */
+  padding-bottom: 9px; /* Establece el relleno inferior del elemento en 9px */
+}
+
+.grade-info form p {
+  margin: 0; /* Establece los márgenes del elemento a 0 */
+}
+
+.grade-info form button,
+.grade-info form input,
+.grade-info form textarea {
+  width: 100%; /* Establece el ancho del elemento al 100% */
+  padding: 0.7em; /* Establece el relleno del elemento en 0.7em */
+  border-radius: 5px; /* Establece el radio de borde del elemento en 5px */
+}
+
+.grade-info form button {
+  background: #0d6efd; /* Establece el color de fondo del botón en #0d6efd */
+  border: 0; /* Quita el borde del botón */
+  text-transform: capitalize; /* Transforma el texto del botón en capitalizado */
+  color: white; /* Establece el color de texto en blanco */
+  cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+}
+
+.grade-info form input,
+.grade-info form textarea {
+  border: 1px solid #666b6e60; /* Establece el borde del elemento con un color y grosor específicos */
+  outline: none; /* Quita el contorno alrededor del elemento */
+  background: #ecf4fc;
+  color: #12171e;
+}
+
+.grade-info form button:hover,
+.grade-info form button:focus {
+  background: #0051c9; /* Establece el color de fondo del botón al pasar el cursor sobre él o al estar enfocado */
+  outline: 0; /* Quita el contorno alrededor del botón al estar enfocado */
+}
+
+/* Mediaquerie para el registro */
+@media (min-width: 1030px) {
+  .registro {
+    padding-bottom: 40px; /* Agrega un espacio inferior de 40px al elemento con la clase "registro" */
+  }
+
+  .container {
+    padding-top: 40px; /* Agrega un espacio superior de 40px al elemento con la clase "container" */
+     /* Establece el espacio de relleno derecho del elemento en 10.4em */
+  }
+
+  .reg-wrapper {
+    display: grid; /* Establece el contenedor como una cuadrícula */
+    grid-template-columns: 1fr 2fr; /* Establece las columnas de la cuadrícula */
+  }
+
+  .grade-info {
+    padding: 1.8em; /* Agrega un espacio de relleno al elemento con la clase "grade-info" */
+  }
+
+  .grade-info h3 {
+    margin-top: 13px; /* Agrega un margen superior de 13px al elemento h3 dentro de "grade-info" */
+    margin-bottom: 22px; /* Agrega un margen inferior de 22px al elemento h3 dentro de "grade-info" */
+  }
+
+  .grade-info form {
+    grid-template-areas:
+      "nombre apellidom apellidop"
+      "nota1 nota2 nota3"
+      "boton promedio promedio"; /* Establece las áreas de la cuadrícula para los elementos del formulario */
+    padding-top: 1.3em; /* Agrega un espacio superior de 1.3em al formulario dentro de "grade-info" */
+  }
+
+  .grade-info form button {
+    margin-top: 31px; /* Agrega un margen superior de 31px al botón del formulario */
+    grid-area: boton; /* Asigna el área "boton" al botón del formulario en la cuadrícula */
+  }
+
+  .grade-info form #prom {
+    grid-area: promedio; /* Asigna el área "promedio" al elemento con el id "prom" en la cuadrícula */
+  }
+
+  .grade-info form .c1 {
+    grid-area: nombre; /* Asigna el área "nombre" al elemento con la clase "c1" en la cuadrícula */
+  }
+
+  .grade-info form .c2 {
+    grid-area: apellidom; /* Asigna el área "apellidom" al elemento con la clase "c2" en la cuadrícula */
+  }
+
+  .grade-info form .c3 {
+    grid-area: apellidop; /* Asigna el área "apellidop" al elemento con la clase "c3" en la cuadrícula */
+  }
+
+  .grade-info form .c4 {
+    grid-area: nota1; /* Asigna el área "nota1" al elemento con la clase "c4" en la cuadrícula */
+  }
+
+  .grade-info form .c5 {
+    grid-area: nota2; /* Asigna el área "nota2" al elemento con la clase "c5" en la cuadrícula */
+  }
+
+  .grade-info form .c6 {
+    grid-area: nota3; /* Asigna el área "nota3" al elemento con la clase "c6" en la cuadrícula */
+  }
+
+  .registro {
+    text-align: left; /* Alinea el texto a la izquierda en el elemento con la clase "registro" */
+  }
+
+  .student-info {
+    width: 320px; /* Establece el ancho */
+  }
+}
+
+
+/*Página principal*/
+
+/*Bloques de contenido inicial*/
+
+.contImgText{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no hay suficiente espacio horizontal */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
+.wrap-contexto{
+  width: 1080px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contText{  
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no hay suficiente espacio horizontal */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
+.card{
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;  
+  cursor: default;
+  transition: all 400ms ease;
+  margin-top: 145px; /* Agrega un margen superior de 70px para separar el contenido del encabezado */
+
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no hay suficiente espacio horizontal */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+
+  max-width: 500px; /* Establece un ancho máximo para evitar que los bloques se vuelvan demasiado anchos en pantallas grandes */
+  flex-grow: 1; /* Permite que los bloques crezcan y ocupen el ancho disponible */
+}
+
+.card:hover{
+  transform: translateY(-2%);
+}
+
+.card img{
+  width: 100%;
+  height: 210px;
+}
+
+.card .contenidoCard{
+  padding: 15px;
+  text-align: center;
+}
+
+.card .contenidoCard p{
+  line-height: 1.5;
+  color: #6a6a6a;
+}
+
+.card .contenidoCard h3{
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.card .contenidoCard a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color: 2fb4cc;
+  border: 1px solid #2f73cc;
+  border-radius: 4px;
+  transition: 400ms ease;
+  color:#2f73cc;
+}
+
+.card .contenidoCard a:hover{
+  background:#2f73cc;
+  color:#fff;
+}
+
+/*Card para textos*/
+.cardText{
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;  
+  cursor: default;
+  transition: all 400ms ease;
+  margin-top: 20px; /* Agrega un margen superior de 70px para separar el contenido del encabezado */
+
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no hay suficiente espacio horizontal */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+
+  max-width: 1100px; /* Establece un ancho máximo para evitar que los bloques se vuelvan demasiado anchos en pantallas grandes */
+  flex-grow: 1; /* Permite que los bloques crezcan y ocupen el ancho disponible */
+}
+
+.cardText .contenidoCard{
+  padding: 15px;
+  text-align: center;
+}
+
+.cardText .contenidoCard p{
+  line-height: 1.5;
+  color: #6a6a6a;
+}
+
+.cardText .contenidoCard h3{
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+/*Aquí debajo va el FOOTER*/
+
+footer{
+  width: 100%;
+  padding-bottom: 20px;
+  background-size: cover;
+}
+
+.container__footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.box__footer{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.box__footer .logo img{
+  width: 180px;
+}
+
+.box__footer .terms{
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #7a7a7a;
+  font-size: 18px;
+}
+
+.box__footer h2{
+  margin-bottom: 30px;
+  color: #343434;
+  font-weight: 700;
+}
+
+.box__footer a{
+  margin-top: 10px;
+  color: #7a7a7a;
+  font-weight: 600;
+}
+
+.box__footer a:hover{
+  opacity: 0.8;
+}
+
+.box__footer a .fab{
+  font-size: 20px;
+}
+
+.box__copyright{
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+}
+
+.box__copyright p{
+  margin-top: 20px;
+  color: #7a7a7a;
+}
+
+.box__copyright hr{
+  border: none;
+  height: 1px;
+  background-color: #7a7a7a;
+}
+
+.imgBannerFooter{
+  border-radius:5%
+}
+
+/*Galeria de imagenes*/
+.GaleryImg{
+  padding: 0;
+  width: 1090px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: #ecf4fb;  
+  margin-top: 20px; /* Margen superior de 20px para separar de .contText */  
+}
+
+.GaleryImg .img-gallery{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  /*
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 30px;*/
+}
+
+.GaleryImg .img-gallery img{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+@media screen and (max-width:400px){
+  h1{
+      text-decoration: underline;
+  }
+  h1::before{
+      display: none;
+  }
+  h1 span{
+      padding: 0;
+  }
+
+  .logo2 span {
+    display: none;
+  }
+
+  .logo2{
+    margin-left: 10px;
+  }
+
+  .card.two{
+    margin-top: 20px;
+  }
+}
+
+.img-gallery figure{
+  position:relative;
+   height: auto;
+   cursor: pointer;
+   width: 350px;
+   overflow: hidden;
+   border-radius: 6px;   
+ }
+
+.img-gallery figure .capa{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,103,123,0.7);
+  transition: all 400ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+ text-align: center;
+}
+.img-gallery figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+.img-gallery figure:hover > .capa h3{
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.img-gallery figure:hover > img{
+  transform: scale(1.3);
+}
+.img-gallery figure .capa h3{
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 400ms ease-out;
+   margin-top: 30px;
+}
+.img-gallery figure .capa p{
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto;
+}
+
+/*Para agregar el icono al costado del texto*/
+
+.contTextTo .iconContainer {
+  width: 30%; /* Ancho del contenedor del icono */
+  display: flex;
+  justify-content: flex-end; /* Alinea el icono a la derecha */
+  align-items: center;
+}
+
+.contTextTo .iconContainer i {
+  background-color: #ecf4fc;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+  margin-right: 100px;
+}
+
+.contTextTo{
+  width: 100%;
+  display: flex;
+  max-width:1100px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contTextTo .cardText{  
+  width: 60%; /* Cambia el ancho para dejar espacio para el icono */
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  cursor: default;
+  transition: all 400ms ease;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  flex-grow: 1;
+}
+
+/*Promociones*/
+.container body {
+  background-color: #278ca5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: auto;
+  max-width: 1080px;
+  overflow-x: auto;
+}
+
+.container .language {
+  color: white;
+  background-color:#278ca5;
+  padding: 12px 16px;
+  border-radius: 5px 5px 0 0;
+  text-align: right;
+  font-weight:500;
+}
+
+.container .code-wrapper {
+  position: relative;
+}
+
+.container .code-wrapper pre {
+  background-color: #c9e6ff;
+  color: rgb(0, 0, 0);
+  padding: 8px 20px;
+  border-radius: 0 0 5px 5px;
+  font-weight:100;
+  overflow: hidden;
+}
+
+.code#code{
+  display: flex;
+  width: auto;
+  height: auto;
+} 
+
+@media (max-width: 1030px) {
+  .enrollador {
+    padding: calc(96px) 32px 0px calc(150px); /* Establece el espacio de relleno con valores calculados para el elemento con la clase "enrollador" */
+  }
+
+  .grade-info form .full {
+    grid-column: 1/3; /* Establece el ancho de la columna del elemento con la clase "full" en el formulario */
+  }
+
+  .container {
+    padding-top: 40px; /* Agrega un espacio superior de 40px al elemento con la clase "container" */
+  }
+
+  .registro {
+    padding-bottom: 40px; /* Agrega un espacio inferior de 40px al elemento con la clase "registro" */
+  }
+
+  .GaleryImg{
+    width: auto;
+  }
+
+  .wrap-contexto {
+    width: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .container{
+    padding: 10px;
+  } 
+  .contTextTo {
+    flex-direction: column;
+  }
+
+  .contTextTo.reverse{
+    flex-direction: column-reverse;
+  }
+
+  .contTextTo .iconContainer{
+    width: auto;
+    justify-content: center;
+  }
+
+  .contTextTo .iconContainer i{
+    margin: 5px;
+  }
+
+  .contTextTo .cardText{
+    width: 90%;
+  }
+  footer{
+    padding-top: 20px;
+  }
+}
